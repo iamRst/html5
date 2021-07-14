@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h1>HTML FORMS</h1>
+    <form action="./thankyou.html" method="GET">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="username" required ><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="Password" id="password" name="pwd"placeholder="password" required ><br><br>
+
+        <label for="email">email:</label>
+        <input type="Email" id="email" name="email" placeholder="email"  required><br><br>
+        <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <ol>
+                <td><li>Rahul</li></td>
+                <td>Singh</td>
+                </ol>
+            </tr>
+        </tbody>
+        </table>
+<!-- use the radio button -->
+        <p>please select your gender</p>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="g" value="Male"  required><br>
+<!-- value tag is used to send some data to backend
+     input tag is used to make input possible 
+     type tag is used to enter the type of input it could be password, email, text etc.
+     placeholder is used to show details within the field 
+ -->
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="g" value="Female"  required><br>
+        
+        <label for="other">others</label>
+        <input type="radio" id="other" name="g" value="others"  required><br>
+
+        <!-- to add dropdown -->
+        <label for="age-group"> select your age group</label>
+        <select name="age-group-values" id="age-group">
+            <option value="5-10">5-10</option>
+            <option value="10-20">10-20</option>
+            <option value="20-30">20-30</option>
+            <option value="40-50">40-50</option>
+            <option value="50+">50+</option>
+        </select> <br><br>
+        
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date"> <br><br>
+        <input type="color" name="" id="colour"><br> <br>
+        <textarea name="" id="" cols="30" rows="10" placeholder="enter the comment here"></textarea><br> <br>
+        <label for="file">file</label>
+        <input type="file" name="" id="file">
+
+        <input type="submit" value="Sign in"><br><br>
+        
+    </form>
+</body>
+</html>
